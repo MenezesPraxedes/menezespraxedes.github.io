@@ -43,11 +43,24 @@ header nav a {
   margin-bottom: 10px;
   margin-right: 5px;
 }
-header nav a:hover {
-  text-decoration: underline white;
-  color: #d3d3d3;
-  font-size: 14px;
+a:hover{
+   transform: scale(1.1);
+   transition: 0.5s;
+   
 }
+.usual:hover{
+  transform: scale(1.50);
+  transition: 1.5s;
+  z-index: 1;
+  margin: 30px;
+}
+.card:hover{
+  transform: scale(1.50);
+  transition: 1.5s;
+  z-index: 1;
+  margin:30px 50px 30px 50px;
+}
+
 /* ===== IMAGENS USUAIS ===== */
 .usual {
   align-items: center;
