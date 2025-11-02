@@ -5,7 +5,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: #d3d3d3;
 }
-
 /* ===== CABEÇALHO ===== */
 header {
   display: flex;
@@ -15,17 +14,11 @@ header {
   background-color: black;
   color: white;
 }
-
-header .logo {
-  background-image: url(loja/logozmgrifes-removebg-preview.png);
-}
-
 .titulo {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
-
 .logo {
   width: 180px;
   height: 120px;
@@ -34,11 +27,14 @@ header .logo {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .acessorios {
   margin-left: 20px;
   margin-bottom: 0;
   margin-top: 25px;
+}
+h4{
+text-align: center;
+margin-top: 0;
 }
 header nav a {
   display: flex;
@@ -47,23 +43,20 @@ header nav a {
   margin-bottom: 10px;
   margin-right: 5px;
 }
-
 header nav a:hover {
   text-decoration: underline white;
   color: #d3d3d3;
   font-size: 14px;
 }
-
 /* ===== IMAGENS USUAIS ===== */
 .usual {
   align-items: center;
-  margin-right: 30px;
+  margin:10px 10px 0 10px;
   background-color: black;
   border-radius: 10px;
   width: 70px;
   height: 70px;
 }
-
 .usual img {
   position: absolute;
   width: 70px;
@@ -73,21 +66,17 @@ header nav a:hover {
   opacity: 0;
   animation: trocar 6s infinite;
 }
-
 /* ===== TÍTULOS ===== */
 h1 {
   font-size: 30px;
   font-family: monospace;
   margin-bottom: 0;
-  text-shadow: 3px 3px 8px;
 }
-
 h2 {
   font-size: 15px;
   text-decoration: underline;
   margin-top: 0;
 }
-
 /* ===== CARDS ===== */
 .card {
   width: 100%;
@@ -98,10 +87,9 @@ h2 {
   border-radius: 10px;
   width: 200px;
   height: 290px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 5px #7a7878;
   padding-bottom: 0;
 }
-
 /* ===== IMAGENS DOS CARDS ===== */
 .slide {
   position: relative;
@@ -109,7 +97,6 @@ h2 {
   height: 210px;
   overflow: hidden;
 }
-
 .slide img {
   position: absolute;
   top: 0;
@@ -120,23 +107,19 @@ h2 {
   opacity: 0;
   animation: trocar 9s infinite;
 }
-
 /* ===== TÍTULO APARECENDO NO HOVER ===== */
 .card h3 {
   opacity: 0;
   transition: opacity 0.4s ease;
   margin-top: 30px;
 }
-
 .slide:hover img {
   transform: scale(1.05);
 }
-
 .slide:hover + h3 {
   opacity: 1;
   border: none;
 }
-
 /* ===== CONTEÚDO PRINCIPAL ===== */
 main {
   flex: 1;
@@ -145,13 +128,11 @@ main {
   margin: 20px auto;
   height: 320px;
 }
-
 .produtos {
   display: flex;
   gap: 15px;
   justify-content: space-between;
 }
-
 /* ===== RODAPÉ ===== */
 footer {
   background-color: black;
@@ -183,7 +164,6 @@ footer {
 }
 
 /* ===== RESPONSIVIDADE ===== */
-
 /* Tablets e telas médias */
 @media (max-width: 900px) {
   .logo {
@@ -196,32 +176,50 @@ footer {
     font-size: 14px;
   }
 }
-
 /* Celulares */
 @media (max-width: 600px) {
   .logo {
-    height: 210px;
-  }
-  .titulo h1 {
-    font-size: 10px;
+    height: 180px;
   }
   .titulo h2 {
-    font-size: 7px;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .acessorios {
+     margin-left: 10px;
+     margin-bottom: 0;
+  }
+   h4 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 12px;
+  }
+  .usual {
+    height: 50px;
+  }
+  .usual img {
+    margin-top: 0;
   }
   .produtos {
     flex-direction: column;
     align-items:center;
   }
-  .diversos img{
+  .diversos img {
   height: 50px;
   width: 50px;
+  margin-left: 9px;
+  margin-bottom: 0;
   align-items: center;
   text-align: center;
   }
-  
   header nav a {
     display: flex;
     justify-content: space-around;
     margin: 10px 0;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1; 
   }
 }
