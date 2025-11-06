@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #d3d3d3;
+  background-color:#eeeeee;
 }
 /* ===== CABEÇALHO ===== */
 header {
@@ -11,8 +11,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #FFFFFF;
+  box-shadow: 2px 3px 3px;
 }
 .titulo {
   display: flex;
@@ -57,15 +58,15 @@ a:hover{
 .card:hover{
   transform: scale(1.50);
   transition: 1.5s;
-  z-index: 1;
   margin:30px 50px 30px 50px;
+  
 }
 
 /* ===== IMAGENS USUAIS ===== */
 .usual {
   align-items: center;
   margin:10px 10px 0 10px;
-  background-color: black;
+  background-color: #000000;
   border-radius: 10px;
   width: 70px;
   height: 70px;
@@ -95,12 +96,12 @@ h2 {
   width: 100%;
   text-align: center;
   position: relative;
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 15px;
   border-radius: 10px;
   width: 200px;
   height: 290px;
-  box-shadow: 3px 3px 5px #7a7878;
+  box-shadow: 3px 3px 5px #5f5d5d;
   padding-bottom: 0;
 }
 /* ===== IMAGENS DOS CARDS ===== */
